@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+
 *,
 *::before,
 *::after {
@@ -5,38 +7,86 @@
 }
 
 body {
-  color: var(--off-white);
-  background-color: var(--dark);
+  font-family: 'Montserrat',
+    sans-serif;
+  color: var(--dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2em;
 }
 
 h1 {
-  color: var(--primary);
-  font-size: var(--font-size-lg);
+  font-weight: 800;
+  font-size: calc(var(--h1-font-size)*0.5);
+  letter-spacing: -0.05em;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: calc(var(--h2-font-size)*0.5);
+  letter-spacing: -0.025em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: calc(var(--h3-font-size)*0.5);
+  letter-spacing: -0.025em;
+  margin-bottom: 0.75em;
 }
 
 p {
-  font-size: var(--font-size-md);
+  font-size: calc(var(--p-font-size) * 0.8);
+  line-height: 1.8em;
+  margin-bottom: 1em;
 }
 
-p,
-article,
-section {
-  line-height: 1.5;
+@media (min-width: 810px) {
+  h1 {
+    font-size: calc(var(--h1-font-size)*0.75);
+  }
+
+  h2 {
+    font-size: calc(var(--h2-font-size)*0.75);
+  }
+
+  h3 {
+    font-size: calc(var(--h3-font-size)*0.75);
+  }
+
+  p {
+    font-size: calc(var(--p-font-size) * 0.9);
+  }
 }
 
-:focus {
-  outline: 0.15rem dashed var(--off-white);
-  outline-offset: 0.25rem;
-}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: var(--h1-font-size);
+  }
 
-main:focus {
-  outline: none;
-}
+  h2 {
+    font-size: var(--h2-font-size);
+  }
 
-img {
-  max-width: 100%;
-}
+  h3 {
+    font-size: var(--h3-font-size);
+  }
 
-a {
-  color: var(--link);
+  p {
+    font-size: var(--p-font-size);
+  }
+
 }

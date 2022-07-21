@@ -4,11 +4,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
-}
-
-.title {
-    margin: 0;
-    line-height: 1.15;
-    font-size: 4rem;
+    height: 100vh;
+    text-align: center;
 }
