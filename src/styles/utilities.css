@@ -1,0 +1,11 @@
+.lockup {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--min-item-width, 30ch), 1fr));
+  gap: var(--space-md);
+}
